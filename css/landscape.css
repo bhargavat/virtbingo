@@ -1,0 +1,18 @@
+@media all and (orientation:landscape) {
+    
+    table[type=board]{
+    	height: 80vh;
+    	width: 85vh;
+    	margin-top: 5%;
+    }
+    div[id="btnset"]{
+    	width: 80%;
+    	margin: auto;
+    }
+
+    img[id=logo]{
+    	max-width: 40%;
+    	margin-top: -3%;
+    }
+
+}

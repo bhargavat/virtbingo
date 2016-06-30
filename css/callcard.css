@@ -1,0 +1,22 @@
+table[id=board1]{
+	background-color: white;
+	width: 70%;
+	height: 68vh;
+	text-align: center;
+	table-layout: fixed;
+	font-size: 2vh;
+	margin: 0px auto;
+	min-width: 300px;
+	max-width: 500px;
+}
+
+button[id=reset]{
+	background-color: #736b6b;
+}
+
+tr.heading{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	border-radius: 0px;
+}

@@ -1,0 +1,15 @@
+@media all and (orientation:portrait) {
+    table[type="board"]{
+    	height: 53vh;
+    	margin-top: 20%;
+    }
+    button[class="hmode"]{
+    	margin: auto;
+    	padding: 2.5%;
+    	width: 30%;
+    }
+    .page{
+    	max-zoom: 125%;
+    }
+
+}

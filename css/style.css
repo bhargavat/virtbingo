@@ -1,0 +1,128 @@
+/* entire HTML page */
+.page{ 
+	background-color: #e6e6e6;
+}
+
+img[id=logo]{
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+div[id=select]{
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+div[id=card]{
+	display: none;
+}
+
+button[id=player],[id=host]{
+	border: none;
+	border-radius: 20px;
+	padding: 20px;
+	width: 40%;
+	font-size: 180%;
+	color: white;
+}
+
+button[id=player]{
+	margin: 20px auto;
+	background-color: firebrick;
+}
+button[id=host]{
+	margin: auto;
+	background-color: #187dd4;
+}
+
+/* boxed number selector */
+.boxed {
+    background-color: white;
+    width: 90px;
+    height: 10px;
+    margin: auto auto 0 auto;
+	text-align:top;
+	border:5px solid black;
+	padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+/* text displaying selected number */
+p[id=numdisp]{
+	font-size: 30px;
+}
+
+/* generate buttons */
+button[id=submit],[id=submit1],[id=reset]{
+	padding: 10px;
+	background-color: red;
+	width: 30%;
+	border: 0px;
+	border-radius: 3px;
+	margin: auto;
+	font-size: 150%;
+	color: white;
+}
+#select{
+	text-align: center;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: transparent;
+	border-radius: 15px;
+}
+
+/* green frames containing the board and selector */
+.jumbotron{
+	background-color: #71ab80;
+	padding: 5px;
+	margin: 0px auto;
+/*	max-width: 666px;*/
+	height: 98vh;
+	border-radius: 4px;
+	text-align: center;
+}
+
+#numgen{
+    min-width: 350px;
+    width: 90%;
+	line-height: 8px;
+	display: none;
+	max-width: 1700px;
+}
+
+/* virtual bingo card table */
+table[type=board]{
+	background-color: white;
+	min-width: 300px;
+	min-height: 50vh;
+	width: 90%;
+	font-size: 2.5vh;
+	text-align: center;
+	table-layout:fixed;
+	margin: 0px auto;
+	max-width: 800px;
+	box-shadow: 2px 2px 20px 1px #000000;
+}
+
+/* BINGO board header */
+tr.heading{
+	background-color: red;
+	text-decoration: white;
+	color: white;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+tr,td{
+	border: 2px solid black;
+	font-size: 115%;
+	text-decoration: white;
+}
+
+/* FREE cell */
+#r3-c3{
+	font-size: 100%;
+}
