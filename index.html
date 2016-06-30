@@ -7,6 +7,8 @@
     	<link href="css/callcard.css" rel="stylesheet">
     	<link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
 		<link rel="stylesheet" media="all and (orientation:landscape)" href="css/landscape.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
     	<!-- Sets limit to zooming -->
     	<meta name="viewport" content="width=device-width, initial-scale=0.9, minimum-scale=0.9, maximum-scale=0.9">
     </head>
@@ -14,6 +16,7 @@
 <body class="page">
 
 <div id="select">
+	<img src="img/virtbingo-hd.png" id="logohd">
 	<img src="img/virtbingo.png" id="logo"> <br>
 	<button id="player" onclick="playerMode()">Player</button><br>
 	<button id="host" onclick="hostMode()">Host</button>
@@ -21,7 +24,7 @@
 
 <div class="jumbotron" id="card">
 	<div id="board">
-	<table type="board">
+	<table id="vboard">
 	  <tr class="heading">
 	    <td>B</td>
 	    <td>I</td>
@@ -30,39 +33,39 @@
 	    <td>O</td>
 	  </tr>
 	  <tr id="r1">
-	    <td id="r1-c1" onclick="changeColor('r1-c1')">?</td>
-	    <td id="r1-c2" onclick="changeColor('r1-c2')">?</td>
-	    <td id="r1-c3" onclick="changeColor('r1-c3')">?</td>
-	    <td id="r1-c4" onclick="changeColor('r1-c4')">?</td>
-	    <td id="r1-c5" onclick="changeColor('r1-c5')">?</td>
+	    <td id="r1-c1">?</td>
+	    <td id="r1-c2">?</td>
+	    <td id="r1-c3">?</td>
+	    <td id="r1-c4">?</td>
+	    <td id="r1-c5">?</td>
 	  </tr>
 	  <tr id="r2">
-	    <td id="r2-c1" onclick="changeColor('r2-c1')">?</td>
-	    <td id="r2-c2" onclick="changeColor('r2-c2')">?</td>
-	    <td id="r2-c3" onclick="changeColor('r2-c3')">?</td>
-	    <td id="r2-c4" onclick="changeColor('r2-c4')">?</td>
-	    <td id="r2-c5" onclick="changeColor('r2-c5')">?</td>
+	    <td id="r2-c1">?</td>
+	    <td id="r2-c2">?</td>
+	    <td id="r2-c3">?</td>
+	    <td id="r2-c4">?</td>
+	    <td id="r2-c5">?</td>
 	  </tr>
 	  <tr id="r3">
-	    <td id="r3-c1" onclick="changeColor('r3-c1')">?</td>
-	    <td id="r3-c2" onclick="changeColor('r3-c2')">?</td>
+	    <td id="r3-c1">?</td>
+	    <td id="r3-c2">?</td>
 	    <td id="r3-c3" bgcolor="#f75757">FREE</td>
-	    <td id="r3-c4" onclick="changeColor('r3-c4')">?</td>
-	    <td id="r3-c5" onclick="changeColor('r3-c5')">?</td>
+	    <td id="r3-c4">?</td>
+	    <td id="r3-c5">?</td>
 	  </tr>
 	  <tr id="r4">
-	    <td id="r4-c1" onclick="changeColor('r4-c1')">?</td>
-	    <td id="r4-c2" onclick="changeColor('r4-c2')">?</td>
-	    <td id="r4-c3" onclick="changeColor('r4-c3')">?</td>
-	    <td id="r4-c4" onclick="changeColor('r4-c4')">?</td>
-	    <td id="r4-c5" onclick="changeColor('r4-c5')">?</td>
+	    <td id="r4-c1">?</td>
+	    <td id="r4-c2">?</td>
+	    <td id="r4-c3">?</td>
+	    <td id="r4-c4">?</td>
+	    <td id="r4-c5">?</td>
 	  </tr>
 	  <tr id="r5">
-	    <td id="r5-c1" onclick="changeColor('r5-c1')">?</td>
-	    <td id="r5-c2" onclick="changeColor('r5-c2')">?</td>
-	    <td id="r5-c3" onclick="changeColor('r5-c3')">?</td>
-	    <td id="r5-c4" onclick="changeColor('r5-c4')">?</td>
-	    <td id="r5-c5" onclick="changeColor('r5-c5')">?</td>
+	    <td id="r5-c1">?</td>
+	    <td id="r5-c2">?</td>
+	    <td id="r5-c3">?</td>
+	    <td id="r5-c4">?</td>
+	    <td id="r5-c5">?</td>
 	  </tr>
 	</table>
 	</div>
@@ -137,8 +140,6 @@
     	<script type='text/javascript' src="js/app2.js"></script>
     	<script type='text/javascript' src="js/display.js"></script>
     	<script type='text/javascript' src="js/FastActive.min.js"></script>
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
-    	</script>
-    	<script type="text/javascript" src="js/angular.min.js"></script>
+
 </body>
 </html>

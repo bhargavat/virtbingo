@@ -1,16 +1,6 @@
 var used = []; //array of values already used
 var marked = "#f75757";
 
-function changeColor(id){	
-	if(((document.getElementById(id).style.backgroundColor == "white")
-		|| (document.getElementById(id).style.backgroundColor == ""))
-		&& (document.getElementById(id).innerHTML) != '?'
-		){
-		document.getElementById(id).style.backgroundColor = marked;	
-	}else{
-		document.getElementById(id).style.backgroundColor = "white";
-	}
-}
 function submitted(){ //after 'Generate' button is pressed
 	var row = 1;
 	var col = 1;
@@ -34,6 +24,20 @@ function submitted(){ //after 'Generate' button is pressed
 	}
 	used = [];
 }
+
+// Alternates color for player board
+$(document).on("click", "#vboard td", function (e) {
+	if(this.id == "" || this.id == null) return; //ignores for first row (BINGO)
+
+    var id = this.id;
+    if(((document.getElementById(id).style.backgroundColor == "white")
+		|| (document.getElementById(id).style.backgroundColor == ""))
+		&& (document.getElementById(id).innerHTML) != '?'){
+		document.getElementById(id).style.backgroundColor = marked;	
+	}else{
+		document.getElementById(id).style.backgroundColor = "white";
+	}
+});
 
 function removeElement(e){
 	var elem = document.getElementById(e);

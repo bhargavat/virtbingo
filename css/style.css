@@ -10,6 +10,10 @@ img[id=logo]{
 	max-height: 100%;
 }
 
+img[id=logohd]{
+	display: none;
+}
+
 div[id=select]{
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -47,7 +51,7 @@ button[id=host]{
 	border:5px solid black;
 	padding-bottom: 15px;
     padding-top: 15px;
-
+    border-radius: 10px;
 }
 
 /* text displaying selected number */
@@ -66,6 +70,16 @@ button[id=submit],[id=submit1],[id=reset]{
 	font-size: 150%;
 	color: white;
 }
+
+/*button[id=menu] {
+    margin-top: 5%;
+    width: 20%;
+    padding: 4px;
+    border: none;
+    background-color: #1e96b1;
+    border-radius: 5px;
+    color: whitesmoke;
+}*/
 #select{
 	text-align: center;
 	margin-top: 50px;
@@ -94,7 +108,7 @@ button[id=submit],[id=submit1],[id=reset]{
 }
 
 /* virtual bingo card table */
-table[type=board]{
+table[id=vboard]{
 	background-color: white;
 	min-width: 300px;
 	min-height: 50vh;
