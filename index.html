@@ -18,11 +18,13 @@
 <div id="select">
 	<img src="img/virtbingo-hd.png" id="logohd">
 	<img src="img/virtbingo.png" id="logo"> <br>
-	<button id="player" onclick="playerMode()">Player</button><br>
-	<button id="host" onclick="hostMode()">Host</button>
+	<button id="player">Player</button><br>
+	<button id="host">Host</button>
 </div>
 
+
 <div class="jumbotron" id="card">
+	<button class="menubtn" id="menu1">Back to Menu</button>
 	<div id="board">
 	<table id="vboard">
 	  <tr class="heading">
@@ -72,14 +74,14 @@
 </div>
 
 	<div class="jumbotron" id="numgen">
-<!-- 		<h2 style="font-size:15px">Number Picker</h2> -->
+		<button class="menubtn" id="menu2">Back to Menu</button>
 		<div class="boxed" id="rnum">
 			<p id="numdisp">...</p>
 		</div>
 		<br>
 	<div id="btnset">
 		<button class= "hmode" id="submit1" onclick="picker()">Generate</button>
-		<button class= "hmode" id="reset" onclick="resetBoard()">Reset</button>
+		<button class= "hmode" id="reset" onclick="resetBoard('reset')">Reset</button>
 	</div>
 		<br>
 		<div class="tracker1">

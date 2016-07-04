@@ -1,9 +1,10 @@
 @media all and (orientation:portrait) {
     table[id="vboard"]{
-    	height: 53vh;
-    	margin-top: 20%;
+    	margin-top: 30%;
+      height: auto;
     }
-    button[class="hmode"]{
+
+    .hmode{
     	margin: auto;
     	padding: 2.5%;
     	width: 30%;
@@ -25,7 +26,20 @@
     }
 
 /*    for large tablets like iPad Air*/
-    @media (min-width: 1000px) and (min-height: 1200px){ 
+    @media (min-width: 1000px) and (min-height: 1000px){
+      .menubtn{
+        padding: 4%;
+        font-size: 400%;
+
+      }
+
+      button[id="menu2"]{
+        padding: 4%;
+        font-size: 500%;
+      }
+      #numgen{
+        height: 105vh;
+      }
     	table[id="board1"]{
     		height: 78vh;
     		width: 80vw;
@@ -60,6 +74,13 @@
     		padding: 3%;
     		font-size: 400%;
     	}
+    }
+
+    /*    ipad mini: 1024w x 768h*/
+    @media (min-height: 650px) and (max-height: 1050px){
+      .menubtn{
+        padding: 2%;
+      }
     }
 
 }

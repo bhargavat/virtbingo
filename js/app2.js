@@ -23,12 +23,12 @@ function picker(){
 		document.getElementById(dispID).innerHTML = "N-"+rnumStr;
 		currId = "n".concat(rnumStr);
 		document.getElementById(currId).style.backgroundColor = marked;
-	} 
+	}
 	else if(rand < 61){
 		document.getElementById(dispID).innerHTML = "G-"+rnumStr;
 		currId = "g".concat(rnumStr);
 		document.getElementById(currId).style.backgroundColor = marked;
-	} 
+	}
 	else if(rand >= 61){
 		document.getElementById(dispID).innerHTML = "O-"+rnumStr;
 		currId = "o".concat(rnumStr);
@@ -41,15 +41,23 @@ function picker(){
 	}
 }
 
-function resetBoard(){
+function resetBoard(type){
+	var confirmed = false;
 	if(used.length == 0) return;
-	if (confirm("Are you sure you want to reset the board?") == true) {
+
+	if(type == 'menu'){
+		confirmed = true;
+	}else{
+			if (confirm("Are you sure you want to reset the board?") == true)
+			confirmed = true;
+		}
+	if(confirmed == true){
 	var table = document.getElementById("board1");
-        for (var i = 1, row; row = table.rows[i]; i++) { 
+        for (var i = 1, row; row = table.rows[i]; i++) {
             for (var j = 0, col; col = row.cells[j]; j++) {
                 if(table.rows[i].cells[j].style.background != "white")
                 table.rows[i].cells[j].style.background = "white"; //just an example
-            }  
+            }
         }
         used = [];
         document.getElementById("numdisp").innerHTML = "...";
